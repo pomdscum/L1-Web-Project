@@ -1,0 +1,38 @@
+<!doctype html>
+
+<head>
+    <title>yes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <img class="moth" src='images/good%20boy.jfif' alt="moth">
+
+    <h1></h1>
+        <script>
+            var answers = ['go outside :)', 'find some moth buddies :)', 'find a lamp post :)']
+
+
+            function testing() {
+                var rand = Math.floor(Math.random() * answers.length);
+
+
+                document.getElementById('text').innerHTML = answers[rand];
+            }
+
+        </script>
+
+
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="story.html">Story</a>
+        <a href="help.html">help</a>
+    </nav>
+    <div class="buttonText">
+    <p class="special">hey there friend you must be weary from your travels sit here and rest i ca offer you some advice?</p>
+    <button onclick="testing()">advice</button>
+    <p id="text"></p>
+    </div>
+
+</body>
